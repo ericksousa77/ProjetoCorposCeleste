@@ -4,15 +4,18 @@
     
 
 @section('content')
-    <h1>Deletar Corpo Celeste</h1>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <h1>Deletar Planeta</h1>
 
 <form action="{{ route('project.destroy')}}" method="POST">
         @method('DELETE')
         @csrf
-        <input type="text" name="" placeholder="Nome:">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Id do Planeta</label>
+            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="ID">
+        </div>
         <p></p>
-        <input type="text" name="" placeholder="Descrição:">
-        <p></p>
-        <button type="submit">Deletar</button>
+        <button type="submit" class="btn btn-primary">Deletar</button> 
+        <a href="{{route('home') }}" class = "btn btn-primary">Voltar</a>
     </form>
 @endsection
