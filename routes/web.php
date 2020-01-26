@@ -15,13 +15,13 @@ use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::delete('corpoceleste/destroy', 'ProjectController@destroy')->name('project.destroy');
+Route::delete('corpoceleste/destroy', 'ProjectController@destroy')->name('project.destroy')->middleware('auth');
 Route::get('corpoceleste/delete','ProjectController@delete')->name('project.delete')->middleware('auth');
 Route::get ('corpoceleste/listagem', 'ProjectController@index')->name('project.index');
 Route::get('corpoceleste/create', 'ProjectController@create')->name('project.create')->middleware('auth');
 Route::get('corpoceleste/edit', 'ProjectController@edit')->name('project.edit')->middleware('auth');
-Route::post('corpoceleste/store', 'ProjectController@store')->name('project.store');
-Route::put('corpoceleste/update', 'ProjectController@update')->name('project.update');
+Route::post('corpoceleste/store', 'ProjectController@store')->name('project.store')->middleware('auth');
+Route::put('corpoceleste/update', 'ProjectController@update')->name('project.update')->middleware('auth');
 
 //Route::get('/login', function(){
    // return 'Login';
@@ -58,3 +58,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/welcome', 'HomeController@principal')->name('principal');
+

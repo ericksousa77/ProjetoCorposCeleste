@@ -30,15 +30,16 @@ class ProjectController extends Controller
         return view('admin.pages.corposcelestes.edit');
     }
 
-    public function store(Request $request)
+    public function store(/*Request $request*/)
     {
-        dd($request->except('_token'));
+        /*dd($request->except('_token'));*/
         return 'criando o item desejado';
     }
 
-    public function update(Request $request)
+    public function update(/*Request $request*/)
     {
-        dd($request->except('_token'));
+        /*dd($request->except('_token'));*/
+        return 'editando o item desejado';
         
     }
 
@@ -47,9 +48,10 @@ class ProjectController extends Controller
         return view ('admin.pages.corposcelestes.delete');
     }
 
-    public function destroy(Request $request)
+    public function destroy(/*Request $request*/)
     {
-        dd($request->except('_token'));
+        /*dd($request->except('_token'));*/
+        return 'deletando o item desejado';
     }
 
 }
