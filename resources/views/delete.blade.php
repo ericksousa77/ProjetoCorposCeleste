@@ -4,6 +4,9 @@
 
 <head>
     <title>Deletar</title>
+    <style>
+        .label-tam{width: 30%}
+    </style>
 </head>
 
 @section('content')
@@ -14,7 +17,7 @@
         @method('DELETE')
         @csrf
 
-        <div class="form-group">
+        <div class="form-group label-tam">
             <label for="formGroupExampleInput">Id do Planeta</label>
             <input type="number" class="form-control" id="formGroupExampleInput" placeholder="ID">
         </div>

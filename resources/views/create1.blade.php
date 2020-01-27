@@ -4,7 +4,8 @@
 
 <head>
     <title>Cadastrar</title>
-    <style>.label-tam{width: 30%}
+    <style>
+        .label-tam{width: 30%}
     </style>
 </head>
 

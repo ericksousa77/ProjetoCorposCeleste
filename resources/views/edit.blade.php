@@ -4,6 +4,9 @@
 
 <head>
     <title>Editar</title>
+    <style>
+        .label-tam{width: 30%}
+    </style>
 </head>
 
 @section('content')
@@ -14,32 +17,32 @@
         @method('put')
         @csrf
         
-        <div class="form-group">
+        <div class="form-group label-tam">
           <label for="formGroupExampleInput">Id do Planeta</label>
           <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ID">
         </div>
 
-        <div class="form-group">
+        <div class="form-group label-tam">
           <label for="formGroupExampleInput2">Nome do Planeta </label>
           <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Nome">
         </div>
 
-        <div class="form-group">
+        <div class="form-group label-tam">
             <label for="formGroupExampleInput2">Tamanho do Planeta </label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Tamanho">
         </div>
 
-        <div class="form-group">
+        <div class="form-group label-tam">
             <label for="formGroupExampleInput2">Massa do Planeta </label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Massa">
         </div>
 
-        <div class="form-group">
+        <div class="form-group label-tam">
             <label for="formGroupExampleInput2">Gravidade do Planeta </label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Gravidade">
         </div>
 
-        <div class="form-group">
+        <div class="form-group label-tam">
             <label for="formGroupExampleInput2">Composição do Planeta </label>
             <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Composição">
         </div>
