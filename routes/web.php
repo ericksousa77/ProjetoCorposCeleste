@@ -15,13 +15,13 @@ use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::delete('corpoceleste/destroy', 'ProjectController@destroy')->name('project.destroy')->middleware('auth');
-Route::get('corpoceleste/delete','ProjectController@delete')->name('project.delete')->middleware('auth');
-Route::get ('corpoceleste/listagem', 'ProjectController@index')->name('project.index')->middleware('auth');
-Route::get('corpoceleste/create', 'ProjectController@create')->name('project.create')->middleware('auth');
-Route::get('corpoceleste/edit', 'ProjectController@edit')->name('project.edit')->middleware('auth');
-Route::post('corpoceleste/store', 'ProjectController@store')->name('project.store')->middleware('auth');
-Route::put('corpoceleste/update', 'ProjectController@update')->name('project.update')->middleware('auth');
+Route::delete('corpoceleste/destroy', 'ProjectController@destroy')->name('project.destroy');
+Route::get('corpoceleste/delete','ProjectController@delete')->name('project.delete');
+Route::get ('corpoceleste/listagem', 'ProjectController@index')->name('project.index');
+Route::get('corpoceleste/create', 'ProjectController@create')->name('project.create');
+Route::get('corpoceleste/edit', 'ProjectController@edit')->name('project.edit');
+Route::post('corpoceleste/store', 'ProjectController@store')->name('project.store');
+Route::put('corpoceleste/update', 'ProjectController@update')->name('project.update');
 
 //Route::get('/login', function(){
    // return 'Login';
