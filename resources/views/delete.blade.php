@@ -20,7 +20,7 @@
 <form action="{{ route('project.destroy')}}" method="POST">
         @method('DELETE')
         @csrf
-        <div align = center>
+        <div>
             <div class="form-group label-tam ">  
                 <label for="formGroupExampleInput">Id do Planeta</label>
                 <input type="number" class="form-control" id="formGroupExampleInput" placeholder="ID">
