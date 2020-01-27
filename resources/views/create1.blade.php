@@ -4,7 +4,11 @@
 
 <head>
     <title>Cadastrar</title>
+    <style>.label-tam{width: 30%}
+    </style>
 </head>
+
+
 
 
 @section('content')
@@ -13,7 +17,7 @@
 
     <form action="{{ route('project.store')}}" method="POST">
         @csrf
-        <div>
+        <div class="label-tam">
             <div class="form-group">
                 <label for="formGroupExampleInput">Id do Planeta</label>
                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ID">

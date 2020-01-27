@@ -22,12 +22,12 @@ class ProjectController extends Controller
 
     public function create()
     {
-        return view('admin.pages.corposcelestes.create1');
+        return view('create1');
     }
 
     public function edit()
     {
-        return view('admin.pages.corposcelestes.edit');
+        return view('edit');
     }
 
     public function store(/*Request $request*/)
@@ -45,7 +45,7 @@ class ProjectController extends Controller
 
     public function delete ()
     {
-        return view ('admin.pages.corposcelestes.delete');
+        return view ('delete');
     }
 
     public function destroy(/*Request $request*/)
