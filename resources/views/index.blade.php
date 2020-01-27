@@ -14,6 +14,7 @@
     <h1>Editar Planeta</h1>
 
 <form action="{{ route('project.update')}}" method="POST">
+        @method('put')
         @csrf
 
         <div class="form-group label-tam">
