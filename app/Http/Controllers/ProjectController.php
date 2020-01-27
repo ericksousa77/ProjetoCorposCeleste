@@ -17,7 +17,7 @@ class ProjectController extends Controller
     public function index()
     {
         $testes = [1,2,3,4,5,6,7,8];
-        return view('admin.pages.corposcelestes.index',compact('testes'));
+        return view('index',compact('testes'));
     }
 
     public function create()

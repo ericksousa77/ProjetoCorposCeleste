@@ -19,5 +19,7 @@
             </div>
         </div>
     </div>
+    <a href="{{route('principal') }}" class = "btn btn-primary">Voltar</a>
 </div>
+
 @endsection

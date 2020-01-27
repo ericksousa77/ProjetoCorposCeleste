@@ -68,7 +68,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Página do Usuário</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
 
@@ -88,7 +88,7 @@
                     <a href= "{{route('project.create')}}">Create</a>   
                     <a href="{{route('project.edit')}}">Edit</a>         
                     <a href="{{route('project.delete')}}">Remove</a>         
-                    <a href="http://localhost/laravel/public/corpoceleste/listagem">List</a>     
+                    <a href="{{route('project.index')}}">List</a>     
 
 
                 </div>
