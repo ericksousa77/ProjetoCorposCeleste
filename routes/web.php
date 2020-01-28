@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::delete('corpoceleste/destroy', 'ProjectController@destroy')->name('project.destroy')->middleware('auth');
 Route::get('corpoceleste/delete','ProjectController@delete')->name('project.delete')->middleware('auth');
-Route::get ('corpoceleste/listagem', 'ProjectController@index')->name('project.index')->middleware('auth');
+Route::get ('corpoceleste/listagem', 'ProjectController@index')->name('project.index');
 Route::get('corpoceleste/create', 'ProjectController@create')->name('project.create')->middleware('auth');
 Route::get('corpoceleste/edit', 'ProjectController@edit')->name('project.edit')->middleware('auth');
 Route::post('corpoceleste/store', 'ProjectController@store')->name('project.store')->middleware('auth');
